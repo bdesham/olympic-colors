@@ -44,4 +44,8 @@ This format is suitable for feeding to the `hitting-set` library, specifically b
 
 Copyright © 2012 Benjamin D. Esham (www.bdesham.info).
 
-This project is distributed under the Eclipse Public License, the same as that used by Clojure. A copy of the license is included as “epl-v10.html” in this distribution.
+The code in this project is distributed under the Eclipse Public License, the same as that used by Clojure. A copy of the license is included as “epl-v10.html” in this distribution.
+
+The file “flags.html” is a copy of the HTML source of the Wikipedia article “list of countries by colors of national flags”, which is released under the [Creative Commons Attribution-ShareAlike 3.0 Unported license][cc by-sa].
+
+[cc by-sa]: https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License

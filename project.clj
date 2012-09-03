@@ -1,5 +1,5 @@
-(defproject olympic-colors "1.0.0"
-            :description "Find a minimal hitting set of colors in national flags"
+(defproject olympic-colors "0.8.0"
+            :description "Build a list of national flags and their colors"
             :url "https://github.com/bdesham/olympic-colors"
             :license {:name "Eclipse Public License"
                       :distribution :repo
@@ -7,5 +7,5 @@
                       :comment "Same as Clojure"}
             :dependencies [[org.clojure/clojure "1.4.0"]
                            [enlive "1.0.1"]
-                           [hitting-set "0.8.0-SNAPSHOT"]]
+                           [hitting-set "0.8.0"]]
             :main olympic-colors)
