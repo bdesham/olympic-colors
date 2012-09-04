@@ -1,8 +1,7 @@
 (ns olympic-colors
   (:use [clojure.set :only [difference]]
         net.cgrand.enlive-html
-        ;[hitting-set :only [enumerate-hitting-sets smallest-hitting-sets]]
-        )
+        [hitting-set :only [enumerate-hitting-sets minimal-hitting-sets]])
   (:require [clojure.string :as string]))
 
 (defn- split-colors
@@ -31,7 +30,7 @@
 (def ^:private wikipedia-url
   "http://en.wikipedia.org/wiki/List_of_countries_by_colors_of_national_flags")
 
-(defn- colors-and-countries
+(defn colors-and-countries
   "Uses enlive to take Wikipedia's list of national flags and extract the HTML
   elements of interest: the <span>s within each heading (these indicate colors)
   and the <a>s in list items (these give the country names). This function
@@ -51,7 +50,7 @@
          pass2 (butlast (first (select pass1 {[:*] [[:span (attr= :id "See_also")]]})))]
      pass2)))
 
-(defn- color-map
+(defn color-map
   "Given the output of colors-and-countries, returns a map where the keys are
   country names (as strings) and the values are the colors of those countries'
   flags (as sets of keywords). If the value :MISSING appears in any of the

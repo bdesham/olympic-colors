@@ -37,8 +37,16 @@ This format is suitable for feeding to the `hitting-set` library, specifically b
 
 ```clj
 (def flag-map (flags))
-(smallest-hitting-sets flag-map)
+(minimal-hitting-sets flag-map)
 ```
+
+By default, the flag color data is taken from the file `flags.html`, which is a copy of the Wikipedia article’s HTML from 2012-08-31. To use “live” data, do
+
+```clj
+(color-map (colors-and-countries))
+```
+
+This will give output in the same format as returned by `flags`.
 
 ## License
 
