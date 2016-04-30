@@ -4,11 +4,9 @@ The Olympic flag consists of red, blue, green, yellow, and black rings on a whit
 
 I examined this problem in depth in [an article on my website][article]. The function of this small Clojure project is to screen-scrape Wikipedia’s [list of countries by colors of national flags][flags], producing a mapping from countries to flag colors that can be processed by [hitting-set][hitting-set], another library I wrote in connection with this problem.
 
-[article]: http://www.bdesham.info/2012/09/olympic-colors
+[article]: https://esham.io/2012/09/olympic-colors
 [flags]: http://en.wikipedia.org/wiki/List_of_countries_by_colors_of_national_flags
 [hitting-set]: https://github.com/bdesham/hitting-set
-
-Version numbers are assigned to this project according to version 1.0.0 of the [Semantic Versioning](http://semver.org/) specification.
 
 ## Usage
 
@@ -48,12 +46,17 @@ By default, the flag color data is taken from the file `flags.html`, which is a 
 
 This will give output in the same format as returned by `flags`.
 
+## Author
+
+This project was created by [Benjamin Esham](https://esham.io).
+
+This project is [hosted on GitHub](https://github.com/bdesham/olympic-colors).
+
 ## License
 
-Copyright © 2012 Benjamin D. Esham (www.bdesham.info).
+Copyright © 2012 Benjamin D. Esham. The code in this project is distributed under the Eclipse Public License, the same as that used by Clojure. A copy of the license is included as “epl-v10.html” in this distribution.
 
-The code in this project is distributed under the Eclipse Public License, the same as that used by Clojure. A copy of the license is included as “epl-v10.html” in this distribution.
-
-The file “flags.html” is a copy of the HTML source of the Wikipedia article “list of countries by colors of national flags”, which is released under the [Creative Commons Attribution-ShareAlike 3.0 Unported license][cc by-sa].
+The file “flags.html” is a copy of the HTML source of the Wikipedia article “list of countries by colors of national flags”, which is released under the [Creative Commons Attribution-ShareAlike 3.0 Unported license][cc by-sa]. The list of contributors to that article is [available on Wikipedia][history].
 
 [cc by-sa]: https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License
+[history]: https://en.wikipedia.org/w/index.php?title=List_of_flags_by_color_combination&action=history
