@@ -4,6 +4,8 @@ The Olympic flag consists of red, blue, green, yellow, and black rings on a whit
 
 I examined this problem in depth in [an article on my website][article]. The function of this small Clojure project is to screen-scrape Wikipedia’s [list of countries by colors of national flags][flags], producing a mapping from countries to flag colors that can be processed by [hitting-set][hitting-set], another library I wrote in connection with this problem.
 
+⚠️ **Notice:** This project is no longer maintained. It may have severe security or compatibility problems. Use it at your own risk!
+
 [article]: https://esham.io/2012/09/olympic-colors
 [flags]: http://en.wikipedia.org/wiki/List_of_countries_by_colors_of_national_flags
 [hitting-set]: https://github.com/bdesham/hitting-set
@@ -50,7 +52,7 @@ This will give output in the same format as returned by `flags`.
 
 This project was created by [Benjamin Esham](https://esham.io).
 
-This project is [hosted on GitHub](https://github.com/bdesham/olympic-colors).
+This project is [hosted on GitHub](https://github.com/bdesham/olympic-colors). It is **no longer being developed** and is left on GitHub only in the hope that someone will find the code interesting or useful.
 
 ## License
 
